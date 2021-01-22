@@ -10,7 +10,7 @@ pipeline {
     stage('Deploy App') {
       steps {
         script {
-          kubernetesDeploy(configs: "hellodocker.yaml", kubeconfigId: "MINIKUBECONFIG")
+          sh "kubectl apply -f hellodocker.yaml"
         }
       }
     }
