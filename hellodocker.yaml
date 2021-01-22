@@ -4,7 +4,7 @@ metadata:
   labels:
     run: hello-docker
   name: hello-docker
-  namespace: foo
+  namespace: challange
 spec:
   containers:
   - image: harik8/hello-docker
